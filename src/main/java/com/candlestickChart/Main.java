@@ -19,8 +19,8 @@ public class Main extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) {
 		try {
 			String url ="jdbc:mysql://localhost:3306/db1";
-			String user = "root";
-			String pass = "Pooja@240494";
+			String user = "";
+			String pass = "";
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(url, user, pass);
 			if (conn != null) {
